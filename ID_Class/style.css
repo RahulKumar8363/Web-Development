@@ -1,9 +1,10 @@
-.red{
-background-color: blue;
+
+#header {
+    color:yellow;
 }
-.bg-yellow{
-    background-color: yellow;
+.text {
+    color: blue;
 }
-#firstdev{
-    background-color:brown;
+#footer {
+    color: rgb(43, 226, 128);
 }
