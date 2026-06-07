@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <form action="login.php" method="post">
+
+        <!-- <div>
+            <label for="username">Enter User Name</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Enter Password</label>
+            <input type="password" id="password" name="password">
+
+            <button type="submit">Submit</button>
+        </div> -->
+
+        <!-- <h1>Validation Form</h1>
+
+        <div>
+            <label for="username">Enter User Name:</label>
+            <input type="text" name="username" id="username" required placeholder="Enter username"><br><br>
+        </div>
+
+        <div>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password" required minlength="6" placeholder="Enter password"><br><br>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div> -->
+
+        <!-- # login form upgrade -->
+        <div>
+            <label for="username">Enter Username:</label>
+            <input type="text" name="username" id="username" required placeholder="Enter username"><br><br>
+        </div>
+
+        <div>
+            <label for="password">Enter Password:</label>
+           <input type="password" id="password" name="password" required minlength="6" placeholder="Enter password">
+        </div>
+
+        <div>
+            <input type="checkbox" id="showPassword" onclick="togglePassword()">
+            <label for="showPassword">Show Password</label>
+        </div>
+
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+    <script>
+        function togglePassword() {
+            let pass = document.getElementById("password");
+
+            if (pass.type === "password") {
+                pass.type = "text";
+            } else {
+                pass.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>
