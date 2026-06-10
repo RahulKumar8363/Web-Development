@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'popins', sans-serif;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #020617;
+            position: static;
+            top: 0;
+        }
+
+        nav h2 {
+            color: rgb(0, 153, 255);
+        }
+
+        nav a {
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: rgb(0, 195, 255);
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: rgb(0, 102, 255);
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 2px solid rgb(0, 110, 255);
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 15px #38bdf8;
+        }
+        footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 30px;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2>Rahul Kumar</h2>
+        <div>
+            <a href="Header">Header</a>
+            <a href="Summary">Summary</a>
+            <a href="Skills">Skills</a>
+            <a href="Projects">Projects</a>
+            <a href="Education">Education</a>
+            <a href="Contact">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Rahul Kumar</h1>
+        <img src="photo.jpeg" alt="my profile">
+        <br>
+        <div>
+            <p>Name-Rahul Kumar</p>
+            <p>Role-Software Developer</p>
+            <p>Contact Links</p>
+            <a href="#" class="btn">Linkdin</a>
+            <a href="H" class="btn">Github</a>
+        </div>
+    </header>
+    <div class="container">
+        <section id="Summary"></section>
+        <h2>
+            About Summary
+        </h2>
+        <p> I am Rahul Kumar, a final-year B.Tech student at
+            Arka Jain University.
+            I am passionate about building real-world projects and learning new technologies.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Python ⭐⭐⭐</p>
+            <p>C++ ⭐⭐⭐</p>
+            <p>Java ⭐⭐⭐</p>
+            <p>Web Development ⭐⭐⭐</p>
+
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="projects">
+
+                <div class="project-card">
+                    <h3>AI Chatbot</h3>
+                    <p>Python-based chatbot with basic AI responses.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Chat App</h3>
+                    <p>Real-time messaging using sockets.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Face Detection</h3>
+                    <p>OpenCV-based face recognition system.</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: rk8459777@gmail.com</p>
+            <p>Phone: 92341320</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Rahul Kumar</p>
+    </footer>
+
+    </div>
+</body>
+
+</html>
