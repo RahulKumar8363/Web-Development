@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width:2048px;*/
+            width: 80vw;
+            height: 10vw;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width:2048px;*/
+            width: 80vw;
+            /*height: 80vw;*/
+            min-height: 80vw;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+        .container > div {
+            /*font-size: 2em;*/
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        .container > div > div {
+            border: 2px solid black;
+            width: 50;
+        }
+
+        .mycount {
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem laboriosam, dolorum fuga
+            molestias
+            distinctio error dolore delectus aliquid dolor alias? Assumenda harum quam consequuntur at quaerat
+            asperiores
+            vero alias iste?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab repellat odit quasi exercitationem quae,
+            consectetur facilis consequatur error omnis nobis aspernatur quia maiores!
+        </div>
+    </div>
+
+    <div class="mycount">
+        I am anthor div.
+    </div>
+</body>
+
+</html>
