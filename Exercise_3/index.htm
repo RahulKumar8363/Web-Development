@@ -6,36 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
         body {
             background-color: gray;
+            padding: 45px;
+            display: flex;
         }
 
         .card {
             background-color: white;
-            width: 198px;
-            height: 360px;
+            width: 220px;
             border-radius: 7px;
+            padding: 0 0 14px 0;
+            margin: 5px;
+
         }
 
         .image {
-            padding: 5px;
+            padding: 14px;
         }
 
         .image img {
             border-radius: 7px;
         }
+
         .content {
             font-size: 13px;
+            
         }
-        .capsules{
-            padding: 0 34px;
-        }
-        .capsules span{
-            border: 1px solid gray;
-            padding: 1px 7px;
-            border-radius: 7px;
-            font-size: 12px;
 
+        .capsules {
+            padding: 0 15px;
+            color: gray;
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+       .capsules span {
+       border: 1px solid gray;
+       padding: 1px 5px;
+       border-radius: 7px;
+       font-size: 15px;
+       color: aqu;
+}
+        .content p {
+            font-size: 10px;
+            color: gray;
+             font-family: "Poppins", sans-serif;
+             font-weight: 500;
+            font-style: normal;
+            padding: 0 15px;
+            margin-top: -5px;
+        }
+        .content h2{
+            padding: 0 15px;
+        }
+        .button{
+            text-align: center;
+        }
+        .button button{
+            padding:7px 9px;  
+            font-size: 9px;
+            border-radius: 15px;
+            border: none;
+            color:rgb(138, 138, 227);
+            background-color: rgb(219, 219, 247);   
+            cursor: pointer;      
+        }
+        .button button:hover{ 
+            color:rgb(81, 81, 145);
+            background-color: rgb(35, 35, 97);  
         }
     </style>
 </head>
@@ -48,14 +90,39 @@
         </div>
 
         <div class="capsules">
-        <span>Nature</span>
-        <span>Photo</span>
-        </div>  
+            <span>Nature</span>
+            <span>Photo</span>
+        </div>
 
         <div class="content">
-            <h1>Rahul</h1>
+            <h2>Rahul</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem dolorem officia fuga quod,
                 reiciendis porro necessitatibus? Asperiores architecto consectetur nobis atque delectus!</p>
+        </div>
+        <div class="button">
+            <button> Read More</button>
+        </div>
+
+    </div>
+
+     <div class="card">
+
+        <div class="image">
+            <img width="188" src="WhatsApp Image 2026-06-30 at 9.35.59 PM.jpeg" alt="">
+        </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Photo</span>
+        </div>
+
+        <div class="content">
+            <h2>Rahul</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem dolorem officia fuga quod,
+                reiciendis porro necessitatibus? Asperiores architecto consectetur nobis atque delectus!</p>
+        </div>
+        <div class="button">
+            <button> Read More</button>
         </div>
 
     </div>
