@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms - Lets learn it</title>
+    <title>Forms practices</title>
 </head>
-
 <body>
-    <h1>Form to apply for sigma Web development - TA</h1>
+    <h1>Form to apply for RAHUL Course</h1>
     <form action="post">
-        <div>
+       <!-- full name -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your full name" required><br><br>
 
+        <!-- Email -->
+       <label for="email">Email</label>
+       <input type="email" id="email" name="email" placeholder="Enter your Email id" required><br><br>
 
-            <label for="username">Enter your Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username">
-        </div>
-        <div>
-            <label for="male">Male</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-        </div>
+       <!-- Password -->
+        <label for="Password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required><br><br>
 
-        <div><input type="checkbox" id="subscribe" name="subscribe" value="yes">
-            <label for="subscribe">Subscribe to newsletter</label>
-            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-            <label for="subscribe">Subscribe to newsletter</label>
-        </div>
-        <div>
-            <br>
-            <label for="comment">Enter your comment</label>
-            <textarea id="comment" name="comment" rows="4" cols="50">
-</textarea>
-        </div>
-        <div>
-            <select name="fruits">
-                <option value="apple">Apple</option>
-                <option value="banana">Banana</option>
-                <option value="cherry">Cherry</option>
-            </select>
-        </div>
+        <!-- PhoneNumber -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required><br><br>
 
+        <!-- Date of Birth -->
+         <label for="dob">Date of Birth</label>
+         <input type="date" id="dob" name="dob" required><br><br>
 
-    </form>
+         <!-- Gender -->
+          <label>Gender:</label>
+          <input type="radio" name="male" id="gender" value="male">
+          <label for="male">Male</label>
 
+          <input type="radio" name="female" id="gender" value="female">
+          <label for="female">Female</label> <br><br>
+
+          <!-- course -->
+           <label for="course">Select Course</label>
+           <select name="course" id="course" required>
+            <option value="">--Select Course--</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="IT">Information Technology</option>
+            <option value="IEEE">Electrical Engineering</option>
+            <option value="ME">Mechnical Engineering</option>
+           </select><br><br>
+
+           <!-- Skills -->
+            <label>Skills:</label>
+            <input type="checkbox" name="Html" id="html" value="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label><br><br>
+
+            <!-- Address -->
+
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" rows="4" cols="30" placeholder="Enter your Address"></textarea><br><br>
+
+            <!-- Buttons -->
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+            </form>
 </body>
-
 </html>
